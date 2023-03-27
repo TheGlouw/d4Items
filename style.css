@@ -157,3 +157,15 @@ p {
 .main-filters .filter-button {
   font-size: 1.5rem;
 }
+
+.custom-filter-input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 2px solid #555;
+  background: #ccc;
+  font-weight: bold;
+}
+
+.custom-filter-container {
+  margin: 5px;
+}
