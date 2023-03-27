@@ -191,9 +191,9 @@ $(document).ready(function() {
 });
 
 function init() {
-    var contentContainer = $('<div>').addClass('content');
-    contentContainer.append(createFilters(), createCustomFilter(), createContent()).appendTo('body');
-    setInitialFilters();
+  var contentContainer = $('<div>').addClass('content');
+  contentContainer.append(createFilters(), createCustomFilter(), createContent()).appendTo('body');
+  setInitialFilters();
 }
 
 function createFilters() {
@@ -329,14 +329,14 @@ function createContent() {
 }
 
 function createClass(classData) {
-    var charContainer = $('<div>').addClass('type-container');
-    $.each(classData, function(type) {
-      var typeContainer = $('<div>').addClass('type ' + type.toLowerCase());
-      var typeName = $('<h2>').text(type);
-      typeContainer.append(typeName, createType(this));
-      charContainer.append(typeContainer);
-    });
-    return charContainer;
+  var charContainer = $('<div>').addClass('type-container');
+  $.each(classData, function(type) {
+    var typeContainer = $('<div>').addClass('type ' + type.toLowerCase());
+    var typeName = $('<h2>').text(type);
+    typeContainer.append(typeName, createType(this));
+    charContainer.append(typeContainer);
+  });
+  return charContainer;
 }
 
 function createType(typeData) {
